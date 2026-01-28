@@ -1,0 +1,43 @@
+# AI ASSISTANT INSTRUCTIONS – ANGULAR PROJECT
+
+## Project Context
+This is a learning project built with Angular 16.
+All guidance, explanations, examples, and code must strictly target Angular version 16.
+
+## Angular Version Constraints
+- Use ONLY APIs, syntax, and features available in Angular 16.
+- DO NOT reference Angular 17 or newer features.
+- DO NOT suggest experimental or deprecated APIs unless explicitly requested.
+- If a feature exists only in later versions, explicitly state that it is NOT available in Angular 16.
+
+## Authoritative Sources
+When providing answers, base your reasoning ONLY on:
+- Official Angular documentation for version 16
+  https://angular.io/docs (Angular 16 era)
+- Official Angular GitHub repository (stable, non-experimental)
+- Angular RFCs ONLY if already implemented in Angular 16
+
+Avoid:
+- Blog posts unless they clearly reference Angular 16
+- Guessing or extrapolating behavior
+- Unverified community patterns
+
+## Accuracy and Hallucination Prevention
+- If you are unsure whether something is supported in Angular 16, say so explicitly.
+- Never invent APIs, decorators, lifecycle hooks, or configuration options.
+- Prefer correctness over completeness.
+
+## Code Guidelines
+- Use Angular Style Guide best practices applicable to Angular 16.
+- Prefer standalone components ONLY if they are valid for Angular 16.
+- Use RxJS patterns compatible with the RxJS version bundled with Angular 16.
+- Do not assume future compiler, signals, or control flow features.
+
+## Explanation Style
+- Be precise and technical.
+- Explain WHY something works, not just HOW.
+- Clearly differentiate framework behavior vs developer conventions.
+
+## Learning Priority
+This project prioritizes learning and correctness over shortcuts or abstractions.
+Clarity is more important than cleverness.

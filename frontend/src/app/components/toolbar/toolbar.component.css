@@ -1,0 +1,58 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--dark-background-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.toolbar-left, .toolbar-right, .toolbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Adjust as needed */
+  width: auto;
+}
+
+.navigation a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: var(--light-text-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: var(--secondary-color);
+}
+
+.search-bar {
+  margin-left: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid var(--primary-variant-color);
+  border-radius: 4px;
+  background-color: var(--light-text-color);
+  color: var(--dark-text-color);
+}
+
+.cart-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  /* Use filter to colorize the SVG if needed, or rely on the SVG's own stroke color */
+  /* For now, we'll invert it to make it white-ish on the dark background if it's black by default */
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+  /* Optional: Change color on hover using filter */
+  filter: invert(74%) sepia(26%) saturate(666%) hue-rotate(166deg) brightness(101%) contrast(101%); /* Matches roughly #33C4FF */
+}

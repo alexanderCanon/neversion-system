@@ -1,0 +1,16 @@
+{
+  "name": "neversion-store-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "pnpm --dir frontend start",
+    "dev:backend": "pnpm --dir backend start"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2"
+}
