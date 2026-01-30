@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
@@ -18,6 +18,7 @@ import { AdminComponent } from './pages/admin/admin.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { PaymentPageComponent } from './pages/payment-page/payment-page.component';
 import { PlatformDetailComponent } from './pages/platform-detail/platform-detail.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -37,10 +38,13 @@ import { PlatformDetailComponent } from './pages/platform-detail/platform-detail
     CheckoutComponent,
     PaymentPageComponent,
     PlatformDetailComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

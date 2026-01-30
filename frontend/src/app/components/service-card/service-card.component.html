@@ -7,7 +7,10 @@
     <div class="card-rating">
       <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
     </div>
-    <p class="card-price">{{ platforms.price}} / mes</p>
+    <p class="card-price">{{ platforms.price | currency:'Q' }} / mes</p>
     <p class="card-duration">1 Dispositivo</p>
+    <button class="card-button" [routerLink]="['/platforms', platforms.id]">Ver detalles</button>
+    <button class="card-button">Comprar</button>
+    <button class="card-button">Agregar al carrito</button>
   </div>
 </div>

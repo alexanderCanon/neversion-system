@@ -1,0 +1,22 @@
+<div class="container">
+    <form [formGroup]="formContact" (ngSubmit)="send()">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="name" class="form-control" id="name" formControlName="name">
+            <div class="text-danger" *ngIf="formContact.get('name')?.hasError('required')">Nombre Requerido
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" formControlName="email">
+            <div class="text-danger" *ngIf="formContact.get('email')?.hasError('required')">Email Requerido</div>
+            <div class="text-danger" *ngIf="formContact.get('email')?.hasError('email')">Email Invalido</div>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" formControlName="message"></textarea>
+            <div class="text-danger" *ngIf="formContact.get('message')?.hasError('required')">Mensaje Requerido</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

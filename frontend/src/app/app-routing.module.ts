@@ -10,10 +10,11 @@ import { WholesalersComponent } from './pages/wholesalers/wholesalers.component'
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { AdminComponent } from './pages/admin/admin.component';
 import { PlatformDetailComponent } from './pages/platform-detail/platform-detail.component';
-
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'contact', component: ContactComponent },
   { path: 'payment-methods', component: PaymentMethodsComponent },
   { path: 'offers', component: OffersComponent },
   { path: 'games', component: GamesComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: 'wholesalers', component: WholesalersComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'admin', component: AdminComponent },
-  { path: 'platforms-detail/:id', component: PlatformDetailComponent },
+  { path: 'platforms/:platformId', component: PlatformDetailComponent },
+  { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({

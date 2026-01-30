@@ -17,7 +17,7 @@ export class PlatformDetailComponent implements OnInit {
   ngOnInit(): void {
     setTimeout(() => {
       this._route.params.subscribe(params => {
-        this.platform = this.platformList.find(platform => platform.id == params['id']);
+        this.platform = this.platformList.find(platform => platform.id == params['platformId']);
         this.loading = false;
       });
     }, 1000);
