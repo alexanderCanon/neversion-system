@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { GeneralServiceService } from '../../general-service.service';
+import { Platforms } from '../../model/platforms.model';
 
 @Component({
   selector: 'app-home',
@@ -6,11 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  popularServices = [
-    { name: 'Disney Plus', price: 40.00, logo: 'assets/Disney+_logo.svg' },
-    { name: 'HBO Max', price: 30.00, logo: 'assets/HBO_Max_2024.svg' },
-    { name: 'Prime Video', price: 30.00, logo: 'assets/primevideo_logo.svg' },
-    { name: 'IPTV', price: 35.00, logo: 'assets/iptv.webp' },
-    { name: 'Paramount Plus', price: 30.00, logo: 'assets/paramount_logo.svg' }
-  ];
+
+  constructor(private _generalService: GeneralServiceService) { }
+
+  get platformsList(): Platforms[] {
+    return this._generalService.platformsList;
+  }
 }

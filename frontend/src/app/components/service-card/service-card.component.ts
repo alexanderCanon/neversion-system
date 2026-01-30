@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./service-card.component.css']
 })
 export class ServiceCardComponent {
-  @Input() service: any;
+  @Input() platforms: any;
 }

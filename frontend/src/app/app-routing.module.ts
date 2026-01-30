@@ -9,6 +9,8 @@ import { ComboComponent } from './pages/combo/combo.component';
 import { WholesalersComponent } from './pages/wholesalers/wholesalers.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component';
 import { AdminComponent } from './pages/admin/admin.component';
+import { PlatformDetailComponent } from './pages/platform-detail/platform-detail.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +22,7 @@ const routes: Routes = [
   { path: 'wholesalers', component: WholesalersComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'admin', component: AdminComponent },
+  { path: 'platforms-detail/:id', component: PlatformDetailComponent },
 ];
 
 @NgModule({
